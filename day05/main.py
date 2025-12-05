@@ -75,7 +75,6 @@ def solve(input_file):
 
 
 def main():
-    
     answer1, answer2 = solve(INPUT_FILE)
     print(f"Answer #1: {answer1}")
     print(f"Answer #2: {answer2}")
