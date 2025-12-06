@@ -12,11 +12,11 @@ def insert_node(root, value):
     if root is None:
         return TreeNode(value)
     
-    if value[0] < root.value[0] and value[1] < root.value[0]:
+    if value[1] < root.value[0]:
         root.left = insert_node(root.left, value)
-    elif value[0] > root.value[1] and value[1] > root.value[1]:
+    elif value[0] > root.value[1]:
         root.right = insert_node(root.right, value)
-    elif not (value[1] < root.value[0] or value[0] > root.value[1]):
+    else:
         root.value = (min(root.value[0], value[0]), max(root.value[1], value[1]))
 
     return root
