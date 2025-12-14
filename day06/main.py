@@ -45,6 +45,7 @@ def solve_grid_part2(grid):
         
     return answer
 
+
 def solve(input_file):
     grid1 = read_grid_part1(input_file)
     answer1 = solve_grid_part1(grid1)
